@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Serving Fonts</title>
+    <style>
+         @import url('https://fonts.cdnfonts.com/css/game-played-outline');
+                
+         body{    
+         font-family: 'Game Played Outline', sans-serif;
+         font-family: 'Game Played', sans-serif;
+         }                                    
+    </style>
+</head>
+<body>
+    <h1>How to Deliver a Specific Font to a Client's Browser via Server Request</h1>
+    <p>
+      When delivering a specific font to a client making a request to your server, the process generally involves utilizing the @font-face rule in Cascading Style Sheets (CSS). 
+      This rule allows you to define a custom font and specify its source location on the server. When a client's browser requests a web page referencing this font, the server responds by providing the font file along with the necessary information for the browser to render the text using the specified typeface.
+      The font file can be in various formats such as TrueType (.ttf), OpenType (.otf), or Web Open Font Format (.woff).</p>
+    <p>
+     To facilitate font delivery, you would include the @font-face rule in your CSS stylesheet, providing details like the font-family name and the URL pointing to the font file on your server.
+     This ensures that when the client's browser loads the web page, it can retrieve the font file and locally cache it for subsequent use.
+     This approach enhances the visual consistency of your web application across different devices by allowing the client's browser to render text using the designated font, creating a cohesive and intended user experience.                  
+    </p>
+    <p>
+     Upon receiving a page request, the client's browser downloads the specified font file from the server, allowing the web page to display text in the desired typeface.
+     The @font-face rule enables web developers to incorporate a diverse range of fonts, including custom or non-standard ones, enhancing the creative possibilities for web design.
+     This approach not only contributes to the aesthetics of a website but also ensures a consistent and unique visual identity by using specific fonts that align with the overall branding or design requirements.
+    </p>
+    <p>
+     Furthermore, by employing efficient font delivery mechanisms such as Web Open Font Format (.woff), developers can optimize loading times and enhance user experience.
+     The browser caches the font files locally, reducing the need for repeated downloads when users navigate between pages of the same website.
+     This caching strategy minimizes latency, conserves bandwidth, and improves the overall performance of the web application. In summary, the @font-face rule plays a pivotal role in delivering a seamless and visually engaging experience to users by allowing servers to provide distinct fonts that align with the design intent, while also optimizing performance through effective caching strategies.                   
+    </p>
+    <hr>
+    <footer>
+        <p>Last updated: 
+           <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>   
+</body>
+</html>
