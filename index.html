@@ -1,48 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3: Serving Fonts</title>
+    <title>JITENDRA - Resume</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
-         @import url('https://fonts.cdnfonts.com/css/game-played-outline');
-                
-         body{    
-         font-family: 'Game Played Outline', sans-serif;
-         font-family: 'Game Played', sans-serif;
-         }                                    
+        /* Headings */
+h1 {
+    font-family: "Arial", sans-serif; /* Heading font family */
+    color: lightgrey; /* Heading text color */
+    background-color: skyblue; /* Heading background color */
+    padding: 10px; /* Heading padding */
+    text-align: center; /* Center align heading text */
+}
+
+h2 {
+    font-family: "Georgia", serif; /* Subheading font family */
+    color: green; /* Subheading text color */
+}
+
+/* Matter */
+p {
+    font-family: "Roboto", sans-serif; /* Paragraph font family */
+    color: black; /* Paragraph text color */
+    margin-bottom: 10px; /* Bottom margin for paragraphs */
+}
+
+h3 {
+    font-family: "Georgia", serif; /* Subheading font family */
+    color: green; /* Subheading text color */
+}
+
+p8 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+p9 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+p10 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+p11 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+h5 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+h6 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+h7 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+
+p3 {
+    font-family: 'sans-serif';
+    font-size: 20px;
+}
+
+p7 {
+    font-family: 'Bookman';
+    font-size: 20px;
+}
+
+p5 {
+    font-family: 'OCR A Std';
+    font-size: 20px;
+}
+
+p1 {
+    font-family: 'Gill Sans';
+    font-size: 20px;
+}
+
+p6 {
+    font-family: 'Stencil Std';
+    font-size: 20px;
+}
+
+p4 {
+    font-family: 'Bradley Hand';
+    font-size: 20px;
+}
+/* Footer */
+footer {
+    font-family: "Apple Chancery", monospace; /* Footer font family */
+    background-color: white; /* Footer background color */
+    color: black; /* Footer text color */
+    padding: 5px; /* Footer padding */
+    text-align: center; /* Center align footer text */
+}
+
     </style>
 </head>
+
 <body>
-    <h1>How to Deliver a Specific Font to a Client's Browser via Server Request</h1>
-    <p>
-      When delivering a specific font to a client making a request to your server, the process generally involves utilizing the @font-face rule in Cascading Style Sheets (CSS). 
-      This rule allows you to define a custom font and specify its source location on the server. When a client's browser requests a web page referencing this font, the server responds by providing the font file along with the necessary information for the browser to render the text using the specified typeface.
-      The font file can be in various formats such as TrueType (.ttf), OpenType (.otf), or Web Open Font Format (.woff).</p>
-    <p>
-     To facilitate font delivery, you would include the @font-face rule in your CSS stylesheet, providing details like the font-family name and the URL pointing to the font file on your server.
-     This ensures that when the client's browser loads the web page, it can retrieve the font file and locally cache it for subsequent use.
-     This approach enhances the visual consistency of your web application across different devices by allowing the client's browser to render text using the designated font, creating a cohesive and intended user experience.                  
-    </p>
-    <p>
-     Upon receiving a page request, the client's browser downloads the specified font file from the server, allowing the web page to display text in the desired typeface.
-     The @font-face rule enables web developers to incorporate a diverse range of fonts, including custom or non-standard ones, enhancing the creative possibilities for web design.
-     This approach not only contributes to the aesthetics of a website but also ensures a consistent and unique visual identity by using specific fonts that align with the overall branding or design requirements.
-    </p>
-    <p>
-     Furthermore, by employing efficient font delivery mechanisms such as Web Open Font Format (.woff), developers can optimize loading times and enhance user experience.
-     The browser caches the font files locally, reducing the need for repeated downloads when users navigate between pages of the same website.
-     This caching strategy minimizes latency, conserves bandwidth, and improves the overall performance of the web application. In summary, the @font-face rule plays a pivotal role in delivering a seamless and visually engaging experience to users by allowing servers to provide distinct fonts that align with the design intent, while also optimizing performance through effective caching strategies.                   
-    </p>
-    <hr>
+
+    <header>
+        <h1>JITENDRA PAPPALA</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <p>University Name - NORTHERN ARIZONA UNIVERSITY</p>
+        <p>Graduation Year: 2024</p>
+        <hr>
+    </section>
+
+    <section>
+        <h2>PROJECT’S</h2>
+        <p1>Drowsiness Detection System Using Open CV</p1>
+        <p1>Developed a Machine Learning model using Deep-Learning Algorithm, to detect Drowsiness Detection system along with validating input ﬁle for a valid data set. 
+            The output indicates if a person feel’s drowsiness or not. This was done as a main project during my academic’s time to improve my understanding of algorithms 
+            and learn how machine learning can solve real life problems.</p1>
+        <hr>
+    </section>
+
+
+    <section>
+        <h2> TECHNICAL SKILLS </h2>
+        <ul>
+            <li>  Python 3.6 </li>
+            <li> 	C    </li>
+            <li> 	C++   </li>
+            <li> 	Object Oriented Programming with Java  </li>
+            <li> 	Microsoft Oﬃce 365  </li>
+        </ul>
+        
+
+        <hr>
+    </section>
+
+
+    <section>
+        <h2>Course Work</h2>
+        <ul>
+            <li> 	Data mining and Data visualization </li>
+            <li>	Database Management Systems </li>
+                <li>	Probability and Statistics </li>
+                    <li>	Discrete Mathematical statistics </li>
+                        <li>	Machine Learning </li>
+                            <li>	Design and Analysis of Algorithms </li>
+                                <li>	Software Engineering </li>
+                                    <li>	Computer Organization and Architecture </li>
+
+        </ul>
+        
+       
+        <hr>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+     
+            <p>• HTML </p>
+             <p>• CSS  </p>
+                <p>• JavaScript  </p>
+            <!-- Add more skills as needed -->
+      
+        <hr>
+    </section>
+
+    <section>
+        <h2> EXTRACURRICULAR ACTIVITIES  </h2>
+        <p7> •	Volunteer in Tech fest held by SPURTIUM - 2020  </p7>
+        <p7>  •	Volunteer in cultural fest- SPURTIUM – 2019  </p7>
+            
+
+        <hr>
+    </section>
+
+    <section>
+        <h2>PUBLICATION</h2>
+        <p3>• Published a journal on Drowsiness Detection System with Machine Learning and open cv in - IJCRT International with a team of 4 and a mentor.</p3>
+        <p3>•  Drowsiness Detection System is used to Detect Drowsiness of a person while driving. Driver fatigue typically becomes an instantaneous reason behind several traffic accidents.
+             In this manner, there’s a thought to create the framework that will distinguish and inform a driver of his/her terrible psychophysical condition. 
+             Which may essentially diminish the number of fatigue-related car mishaps </p3>
+        <hr>
+    </section>
+
+
+
     <footer>
         <p>Last updated: 
-           <span id="lastModified"></span>
+            <span id="lastModified"></span>
         </p>
     </footer>
     <script type="text/javascript">
          var x = document.lastModified;
          document.getElementById('lastModified').textContent = x;
-    </script>   
+    </script>
+
+
+    </footer>
+    <h3>ADDENDUM</h3>
+    <h4>Font Choices:</h4>
+    <p8>  For this resume, a variety of font families have been selected to create a visually appealing and dynamic layout. The heading font "Arial" exudes professionalism, while the subheading font "Georgia" adds a touch of sophistication. In the body text, the "Roboto" font strikes a balance between readability and modernity, ensuring that information is presented clearly and effectively. Additionally, specific font families have been assigned to certain sections to further enhance the visual hierarchy and readability.</p8>
+        
+    <h5> Heading and Text Sizes: </h5>
+    <p9>    The heading size has been set to a larger font size (h1) to draw attention to key sections such as the individual's name and job title. Subheadings (h2) are slightly smaller to provide a clear hierarchy within each section. The body text (p) is kept at a standard size for easy reading and comprehension.
+    </p9>  
+    <h6>Color Choices: </h6>
+    <p10>   Color plays a crucial role in the overall aesthetic of the resume. The heading background color "skyblue" creates a visually appealing contrast against the lightgrey text, ensuring that key information stands out. Subheadings are distinguished by the green color, adding a pop of color to the document. For the body text, a classic black color is chosen for optimal readability against the white background.
+    </p10>    
+    <h7>Margin and Padding Choices: </h7>
+    <p11>   Margin and padding settings have been applied to various elements to ensure adequate spacing and visual clarity. Margins have been set at 20px to provide breathing room around the entire document, while individual sections have a bottom margin of 20px to separate content effectively. Padding of 10px is applied to headings to add space between the text and the surrounding elements, enhancing readability.
+    </p11>
+
 </body>
+
 </html>
