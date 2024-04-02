@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>    
+    <h1 class="title">LAB 6</h1>
+  </header>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  <main id="content">
+    <div class="quiz-app">
+      <h2>Interactive Quiz</h2>
+      <button type="button" id="start-quiz-button">Start Quiz</button>
+      <div id="quiz-container"></div>
+      <button type="button" id="submit-button" style="display:none;">Submit Quiz</button>
+      <div id="result" style="display:none;"></div>
+    </div>
+  </main>
+
+    <aside id="advertisement">
+      <a href="https://a.co/d/5C8T3KA" target="_blank">
+        <img src="bottle.png" alt="Advertisement" height="500" width="500">
+      </a>
+    </aside>
+  </div>
+ 
+	<footer>
+	  <div class="addendum">
+		<h2>Addendum</h2>
+		<p>Problem: Developed an interactive quiz application in JavaScript.</p>
+
+<h3>Solution Overview:</h3>
+
+<p><b>Initialization:</b> Defined key variables and stored questions and answers.</p>
+<p><b>Start Quiz:</b> Hidden start button, displayed submit button, loaded the first question.</p>
+<p><b>Load Question:</b> Dynamically generated HTML for questions and options.</p>
+<p><b>Submit Quiz:</b> Recorded user answers, validated selection, progressed or showed results.</p>
+<p><b>Show Result:</b> Calculated and displayed the user's score.</p>
+<p><b>Difficulties:</b> No significant challenges encountered.</p>
+
+<p><b>Conclusion:<b> Created a user-friendly quiz application for interactive engagement.</p>
+	  </div>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+	</footer>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
