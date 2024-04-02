@@ -78,7 +78,7 @@ let gameData = {
   oceanicGuardians: {
       text: "You befriend the powerful oceanic guardians dwelling in the Abyssal Trench. Congratulations!",
       choices: ["Ending 6"],
-      image: "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fcould-the-veil-be-the-eyeball-of-a-leviathan-v0-x84cealgluya1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3D1666222d5047bf68f27a86b1f359d83ed5f0ab2e",
+      image: "https://tecnologiatop.club/wp-content/uploads/2023/05/Destiny-2-Season-Of-The-Deep-Patch-Notes-Reveal-Overhaul.jpg",
   },
   seaCommunion: {
       text: "You commune with sea spirits within the tranquil Coral Sanctum, gaining their wisdom. Congratulations!",
