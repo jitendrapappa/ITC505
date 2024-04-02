@@ -1,0 +1,73 @@
+h1{
+	color:aliceblue;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 130vh;
+  margin: 0;
+}
+.quiz-app {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
+}
+
+header {
+    background-image: url('https://t4.ftcdn.net/jpg/02/76/08/07/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+footer {
+  background-color: #999999;
+  padding: 10px;
+}
+
+nav,
+main,
+aside {
+  padding: 20px;
+  background-color: #669999 ;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a { 
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4caf50;
+}
