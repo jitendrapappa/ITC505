@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="head">
+    <h2>Revenge of Lights Out </h2>
+</div>
+    <div id="gameBoard"></div>
+    <div id="winModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Congratulations! You've won the game!</p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>    
+    <!-- Addendum Section -->
+    <div id="addendum">
+        <h2>Addendum: Technical Implementation Details</h2>
+        <p>In this addendum, we delve deeper into the technical aspects of the Lights Out game, focusing on the implementation details and challenges encountered during development.</p>
+        <ol>
+            <li><strong>Dynamic Game Board Generation:</strong>
+                <ul>
+                    <li>Challenge: Generating a dynamic game board with toggleable lights.</li>
+                    <li>Solution:
+                        <ul>
+                            <li>Utilized JavaScript to dynamically create the game board using DOM manipulation.</li>
+                            <li>Implemented nested loops to generate a grid of squares, each representing a light.</li>
+                            <li>Assigned event listeners to each square for toggling its state when clicked.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Random Initialization of Lights:</strong>
+                <ul>
+                    <li>Challenge: Randomly setting the initial state of lights while ensuring solvability.</li>
+                    <li>Solution:
+                        <ul>
+                            <li>Implemented a function, <code>shuffleBoard()</code>, to randomly toggle lights at the start of the game.</li>
+                            <li>Used the <code>Math.random()</code> function to determine whether each light should be initially on or off.</li>
+                            <li>Ensured that the game remains solvable by validating the initial board configuration.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Win Condition and User Feedback:</strong>
+                <ul>
+                    <li>Challenge: Checking for win conditions and providing feedback to the user.</li>
+                    <li>Solution:
+                        <ul>
+                            <li>Developed the <code>checkForWin()</code> function to verify if all lights are turned off.</li>
+                            <li>Displayed a congratulatory message and a modal popup upon winning the game.</li>
+                            <li>Implemented modal functionality to allow the user to play again or exit the game.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    
+    <div class="head">
+    <footer>
+        <p><b>Last updated:</b>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
