@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f7f4; /* Soft light blue-green background */
+    color: #333; /* Dark gray text color */
+}
+
+.head {
+    background-color: #55c1c1; /* Soft turquoise header background */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Game board styles */
+#gameBoard {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow the squares to wrap to the next line if needed */
+    margin: 20px auto;
+    width: 320px; /* Adjusted width */
+    height: 320px; /* Adjusted height */
+    border: 2px solid #55c1c1; /* Soft turquoise border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #d2f0f0; /* Soft pastel turquoise background */
+}
+
+.square {
+    width: 60px; /* Adjusted width for squares */
+    height: 60px; /* Adjusted height for squares */
+    background-color: #fff; /* White square color */
+    border: 2px solid #55c1c1; /* Soft turquoise border */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on background color change */
+}
+
+.square.is-off {
+    background-color: #55c1c1; /* Soft turquoise for off squares */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.square:hover {
+    background-color: #d9f1f1; /* Lighter turquoise on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 2px solid #55c1c1; /* Soft turquoise border */
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.close {
+    color: #555; /* Dark gray close icon color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Black close icon color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addendum {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border: 2px solid #55c1c1; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    overflow: auto; /* Add scrollbars if content overflows */
+}
+#addendum h2, #addendum h3 {
+    color: #55c1c1; /* Soft turquoise headings */
+}
+
+#addendum ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#addendum ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Gray border bottom for list items */
+    padding-bottom: 10px;
+}
+
+#addendum ul li:last-child {
+    border-bottom: none; /* Remove border bottom for last list item */
+}
